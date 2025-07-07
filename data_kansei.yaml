@@ -1,0 +1,4 @@
+datasets:
+  # - json_path: "jsons/guad_for_llava.json"  # 1つのJSONファイルを指定
+  - json_path: "/home/okada/iad/LLaVA-NeXT/jsons/kansei/train0_finetune_data_oneqa.json"  # 複数のJSONファイルを指定
+    sampling_strategy: "all"       # すべてのデータを使用

@@ -126,14 +126,17 @@ class LLaVAOnevisionDataCollator(BaseDataCollator):
                         "role": "assistant",
                         "content": [{"type": "text", "text": text}]
                     })
-                
+
+                if self.usage_mode == "eval" and i == len(cur_convs) - 2:
+                    break
+
             assert len(cur_images) == cur_num_images, "Not all images were used"
             assert len(cur_videos) == cur_num_videos, "Not all videos were used"
             
             temp = self.processor.apply_chat_template(
                 cur_text,
                 chat_template=template,
-                add_generation_prompt=False,
+                add_generation_prompt=False if self.usage_mode == "train" else True,
                 tokenize=True,
                 return_assistant_tokens_mask=True,
                 return_dict=True,
@@ -195,36 +198,76 @@ class LLaVAOnevisionDataCollator(BaseDataCollator):
             
             assert cur_input_ids.shape == cur_labels.shape, "Input and label shapes do not match"
 
-            # padding
-            if cur_input_ids.shape[1] < max_len:
-                cur_input_ids = torch.cat([
-                    cur_input_ids,
-                    torch.full(
-                        (cur_input_ids.shape[0], max_len - cur_input_ids.shape[1]),
-                        self.PAD_TOKEN_ID,
-                        dtype=cur_input_ids.dtype,
-                        device=cur_input_ids.device
-                    )
-                ], dim=1)
-                cur_labels = torch.cat([
-                    cur_labels,
-                    torch.full(
-                        (cur_labels.shape[0], max_len - cur_labels.shape[1]),
-                        self.IGNORE_TOKEN_ID,
-                        dtype=cur_labels.dtype,
-                        device=cur_labels.device
-                    )
-                ], dim=1)
 
             input_ids.append(cur_input_ids)
             labels.append(cur_labels)
 
-        input_ids = torch.cat(input_ids)
-        labels = torch.cat(labels)
+        # padding
+        padded_input_ids = []
+        padded_labels = []
+        current_batch_max_len = max([x.shape[1] for x in input_ids])
+        for cur_input_ids, cur_labels in zip(input_ids, labels):
+            if self.usage_mode == "train":
+                # right padding
+                if cur_input_ids.shape[1] < current_batch_max_len:
+                    cur_input_ids = torch.cat([
+                        cur_input_ids,
+                        torch.full(
+                            (cur_input_ids.shape[0], current_batch_max_len - cur_input_ids.shape[1]),
+                            self.PAD_TOKEN_ID,
+                            dtype=cur_input_ids.dtype,
+                            device=cur_input_ids.device
+                        )
+                    ], dim=1)
+                    cur_labels = torch.cat([
+                        cur_labels,
+                        torch.full(
+                            (cur_labels.shape[0], current_batch_max_len - cur_labels.shape[1]),
+                            self.IGNORE_TOKEN_ID,
+                            dtype=cur_labels.dtype,
+                            device=cur_labels.device
+                        )
+                    ], dim=1)
+            elif self.usage_mode == "eval":
+                # left padding
+                if cur_input_ids.shape[1] < current_batch_max_len:
+                    cur_input_ids = torch.cat([
+                        torch.full(
+                            (cur_input_ids.shape[0], current_batch_max_len - cur_input_ids.shape[1]),
+                            self.PAD_TOKEN_ID,
+                            dtype=cur_input_ids.dtype,
+                            device=cur_input_ids.device
+                        ),
+                        cur_input_ids,
+                    ], dim=1)
+                    cur_labels = torch.cat([
+                        torch.full(
+                            (cur_labels.shape[0], current_batch_max_len - cur_labels.shape[1]),
+                            self.IGNORE_TOKEN_ID,
+                            dtype=cur_labels.dtype,
+                            device=cur_labels.device
+                        ),
+                        cur_labels,
+                    ], dim=1)
+            padded_input_ids.append(cur_input_ids)
+            padded_labels.append(cur_labels)
 
-        return dict(
-            **vision_inputs,
-            input_ids=input_ids,
-            labels=labels,
-            attention_mask=input_ids.ne(self.PAD_TOKEN_ID),
-        )
+        input_ids = torch.cat(padded_input_ids)
+        labels = torch.cat(padded_labels)
+
+        if self.usage_mode == "train":
+            return dict(
+                **vision_inputs,
+                input_ids=input_ids,
+                labels=labels,
+                attention_mask=input_ids.ne(self.PAD_TOKEN_ID),
+            )
+        elif self.usage_mode == "eval":
+           sources = [instance["source"] for instance in instances]
+           return dict(
+                **vision_inputs,
+                input_ids=input_ids,
+                labels=labels,
+                attention_mask=input_ids.ne(self.PAD_TOKEN_ID),
+                sources=sources,
+            )

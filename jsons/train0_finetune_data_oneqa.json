@@ -1,0 +1,1457 @@
+[
+  {
+    "id": "0",
+    "image": "resize256_grain_dataset_208/136_img20210825_09155445.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this particular wood grain pattern one that you find attractive? Please commence your response with yes or no, and then provide a detailed explanation of your choice."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there is a contrast in material color in the middle, but there are no stripes darker than a certain darkness, and no layers."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "1",
+    "image": "resize256_grain_dataset_208/103_img20210825_09112524.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image present a wood grain that aligns with your aesthetic preferences? Start your reply with yes or no, then articulate the reasons behind your answer."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there are no stripes darker than a certain darkness, there is no contrast in the material color, and there are no layers."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "2",
+    "image": "resize256_grain_dataset_208/019_img20211018_14121693.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this image the preferred grain? Please answer first with yes or no and then give the reason for your decision."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there are layers but no stripes."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "3",
+    "image": "resize256_grain_dataset_208/076_img20211015_14264414.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDo you consider the wood grain shown here as preferable? Kindly respond with yes or no initially, and then describe the factors that influenced your decision."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there are no stripes and no contrast in the material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "4",
+    "image": "resize256_grain_dataset_208/098_img20211015_13314741.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs the wood grain in this picture to your liking? Answer with yes or no first, then explain why."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there is contrast in the material color at the bottom, but there are no stripes, and no layers."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "5",
+    "image": "resize256_grain_dataset_208/079_img20211005_08512295.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDo you consider the wood grain shown here as preferable? Kindly respond with yes or no initially, and then describe the factors that influenced your decision."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there are stripes darker than brown but lighter than dark at the top and below the middle, but no stripes darker than dark, no layers, and no contrast in the material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "6",
+    "image": "resize256_grain_dataset_208/168_img20210916_13014504.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image depict wood grain that you find appealing? Please start with yes or no, followed by your reasons."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there are no stripes, no material color contrast, and no layers."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "7",
+    "image": "resize256_grain_dataset_208/086_img20211005_09062464.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWould you say this wood grain meets your standards for visual appeal? Please answer first with yes or no, followed by a justification of your viewpoint."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there are no stripes and no contrast in the material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "8",
+    "image": "resize256_grain_dataset_208/194_img20211018_14101549.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs the wood grain in this picture to your liking? Answer with yes or no first, then explain why."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there is a single dark stripe in the middle, but there is no contrast in the material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "9",
+    "image": "resize256_grain_dataset_208/166_img20210916_12411375.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the wood grain exhibited in this image resonate with your taste? Respond initially with yes or no, and then provide an elaboration of your reasoning."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there is one brownish stripe above the middle, but there are no stripes darker than a certain darkness, the contrast in material color is weak, and there are no layers."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "10",
+    "image": "resize256_grain_dataset_208/084_img20211019_08383485.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDo you consider the wood grain shown here as preferable? Kindly respond with yes or no initially, and then describe the factors that influenced your decision."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there is a black stripe at the top, but no other stripes, no layers, and no contrast in the material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "11",
+    "image": "resize256_grain_dataset_208/047_img20211018_13441168.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image showcase a wood grain pattern that you find visually pleasing? Please respond starting with yes or no, and then delve into the specifics of your preference."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there is a contrast in the material color, but there are no stripes darker than dark, and the stripes are generally blurred, resulting in no contrast."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "12",
+    "image": "resize256_grain_dataset_208/134_img20210825_08522061.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWould you say this wood grain meets your standards for visual appeal? Please answer first with yes or no, followed by a justification of your viewpoint."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there is a contrast in material color in the middle, but there are no stripes darker than a certain darkness, and no layers."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "13",
+    "image": "resize256_grain_dataset_208/141_img20210830_08371860.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDo you consider the wood grain shown here as preferable? Kindly respond with yes or no initially, and then describe the factors that influenced your decision."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there is one stripe darker than a certain darkness in the middle, but there is no contrast in material color, and the layers are blurred."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "14",
+    "image": "resize256_grain_dataset_208/049_img20211018_14230649.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image present a wood grain that aligns with your aesthetic preferences? Start your reply with yes or no, then articulate the reasons behind your answer."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there are no stripes."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "15",
+    "image": "resize256_grain_dataset_208/077_img20210818_10130531.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWould you say this wood grain meets your standards for visual appeal? Please answer first with yes or no, followed by a justification of your viewpoint."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there are brownish stripes at the bottom, but no stripes darker than dark, no layers, and no contrast in the material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "16",
+    "image": "resize256_grain_dataset_208/028_img20210825_08305702.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDo you consider the wood grain shown here as preferable? Kindly respond with yes or no initially, and then describe the factors that influenced your decision."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there are no stripes, no layers, and no contrast in the material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "17",
+    "image": "resize256_grain_dataset_208/165_img20210916_12405632.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDo you consider the wood grain shown here as preferable? Kindly respond with yes or no initially, and then describe the factors that influenced your decision."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there are two dark stripes above the middle, but there is no contrast in material color, no layers, and no balanced contrast throughout."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "18",
+    "image": "resize256_grain_dataset_208/037_img20210818_11201929.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the wood grain exhibited in this image resonate with your taste? Respond initially with yes or no, and then provide an elaboration of your reasoning."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there is a contrast in the material color, but the layers are generally blurred, and it becomes a two-tone color divided by the dark stripe above the middle."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "19",
+    "image": "resize256_grain_dataset_208/005_img20211015_13390426.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image depict wood grain that you find appealing? Please start with yes or no, followed by your reasons."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there is a material color contrast but no stripes."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "20",
+    "image": "resize256_grain_dataset_208/204_img20211019_08474298.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the wood grain exhibited in this image resonate with your taste? Respond initially with yes or no, and then provide an elaboration of your reasoning."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there are stripes darker than brown below and in the middle upper part, but there is no material color contrast and no layers."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "21",
+    "image": "resize256_grain_dataset_208/108_img20211015_14354049.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs the wood grain in this picture to your liking? Answer with yes or no first, then explain why."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there are no stripes, no layers, and no contrast in the material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "22",
+    "image": "resize256_grain_dataset_208/063_img20210916_13290812.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image showcase a wood grain pattern that you find visually pleasing? Please respond starting with yes or no, and then delve into the specifics of your preference."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there is one brownish stripe at the bottom, but no stripes darker than that, and no contrast in the material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "23",
+    "image": "resize256_grain_dataset_208/059_img20210916_12545281.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image depict wood grain that you find appealing? Please start with yes or no, followed by your reasons."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there are no stripes and no contrast in the material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "24",
+    "image": "resize256_grain_dataset_208/155_img20210830_09212150.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this image the preferred grain? Please answer first with yes or no and then give the reason for your decision."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there are two brownish stripes at the top, but there is nothing that can be called a stripe below, and there are no layers."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "25",
+    "image": "resize256_grain_dataset_208/205_img20211015_11050739.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this image the preferred grain? Please answer first with yes or no and then give the reason for your decision."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there is one dark stripe in the upper middle, but there is no material color contrast, and the contrast does not come out well balanced throughout."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "26",
+    "image": "resize256_grain_dataset_208/101_img20211018_14363780.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs the wood grain in this picture to your liking? Answer with yes or no first, then explain why."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there is one brownish stripe above the middle, but no stripes darker than a certain darkness, and the stripes are overall blurred with no layers."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "27",
+    "image": "resize256_grain_dataset_208/123_img20210818_11085444.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image present a wood grain that aligns with your aesthetic preferences? Start your reply with yes or no, then articulate the reasons behind your answer."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there is a contrast in material color at the top middle and bottom, but there are no stripes, and no layers."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "28",
+    "image": "resize256_grain_dataset_208/097_img20210825_08575926.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the wood grain exhibited in this image resonate with your taste? Respond initially with yes or no, and then provide an elaboration of your reasoning."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there is one brownish stripe at the top, and there are layers, but no stripes darker than a certain darkness."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "29",
+    "image": "resize256_grain_dataset_208/090_img20211018_13520616.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWould you say this wood grain meets your standards for visual appeal? Please answer first with yes or no, followed by a justification of your viewpoint."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there are brownish stripes and layers, but no stripes darker than a certain degree, and no contrast in the material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "30",
+    "image": "resize256_grain_dataset_208/073_img20210825_08255475.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWould you say this wood grain meets your standards for visual appeal? Please answer first with yes or no, followed by a justification of your viewpoint."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there are no stripes and no contrast in the material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "31",
+    "image": "resize256_grain_dataset_208/010_img20211018_14031851.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the wood grain exhibited in this image resonate with your taste? Respond initially with yes or no, and then provide an elaboration of your reasoning."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because it results in a two-tone color delineated by the dark stripes above the middle."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "32",
+    "image": "resize256_grain_dataset_208/142_img20210830_08373727.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image present a wood grain that aligns with your aesthetic preferences? Start your reply with yes or no, then articulate the reasons behind your answer."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there are two stripes darker than a certain darkness in the middle, but there is no contrast in material color, and the layers are blurred."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "33",
+    "image": "resize256_grain_dataset_208/015_img20210825_08333897.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this the type of wood grain you typically appreciate? Kindly indicate yes or no at the beginning, then proceed to outline the reasons for your response."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there are no stripes and no material color contrast."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "34",
+    "image": "resize256_grain_dataset_208/161_img20210916_11230904.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWould you say this wood grain meets your standards for visual appeal? Please answer first with yes or no, followed by a justification of your viewpoint."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there are no stripes, no contrast in material color, and the layers are blurred."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "35",
+    "image": "resize256_grain_dataset_208/157_img20210830_09292812.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image showcase a wood grain pattern that you find visually pleasing? Please respond starting with yes or no, and then delve into the specifics of your preference."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there are two dark stripes in the middle and a contrast in material color above the middle, but there is no material color contrast in other parts, resulting in a lack of balanced contrast throughout."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "36",
+    "image": "resize256_grain_dataset_208/106_img20211015_14113400.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image present a wood grain that aligns with your aesthetic preferences? Start your reply with yes or no, then articulate the reasons behind your answer."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there is a contrast in the material color, but there are no stripes darker than a certain darkness, and there are no layers."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "37",
+    "image": "resize256_grain_dataset_208/112_img20210916_12422195.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this image the preferred grain? Please answer first with yes or no and then give the reason for your decision."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there is one dark stripe at the top, but there is no contrast in the material color, and no layers."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "38",
+    "image": "resize256_grain_dataset_208/180_img20211015_13285469.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image depict wood grain that you find appealing? Please start with yes or no, followed by your reasons."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there is one dark stripe in the lower middle, the material color contrast is weak, and the layers are blurred."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "39",
+    "image": "resize256_grain_dataset_208/135_img20210825_09074067.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image showcase a wood grain pattern that you find visually pleasing? Please respond starting with yes or no, and then delve into the specifics of your preference."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there is a contrast in material color at the bottom middle, but there are no stripes darker than a certain darkness, and no layers."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "40",
+    "image": "resize256_grain_dataset_208/114_img20211018_14085130.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this the type of wood grain you typically appreciate? Kindly indicate yes or no at the beginning, then proceed to outline the reasons for your response."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there are layers, but no stripes, and no contrast in the material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "41",
+    "image": "resize256_grain_dataset_208/053_img20211015_13392764.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image present a wood grain that aligns with your aesthetic preferences? Start your reply with yes or no, then articulate the reasons behind your answer."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there are no stripes."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "42",
+    "image": "resize256_grain_dataset_208/040_img20211015_11100269.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image depict wood grain that you find appealing? Please start with yes or no, followed by your reasons."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there is one dark stripe at the bottom, but no other stripes, and no contrast in the material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "43",
+    "image": "resize256_grain_dataset_208/177_img20211005_08515202.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image present a wood grain that aligns with your aesthetic preferences? Start your reply with yes or no, then articulate the reasons behind your answer."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there is one brownish stripe below the middle, but there are no layers and no material color contrast."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "44",
+    "image": "resize256_grain_dataset_208/029_img20211015_15591181.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image depict wood grain that you find appealing? Please start with yes or no, followed by your reasons."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there are no stripes, no contrast in the material color, and the layers are blurred."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "45",
+    "image": "resize256_grain_dataset_208/149_img20210830_09054253.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image showcase a wood grain pattern that you find visually pleasing? Please respond starting with yes or no, and then delve into the specifics of your preference."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there is a brownish stripe in the middle, but there are no stripes darker than a certain darkness, no layers, and no contrast in material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "46",
+    "image": "resize256_grain_dataset_208/124_img20210818_11131968.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDo you consider the wood grain shown here as preferable? Kindly respond with yes or no initially, and then describe the factors that influenced your decision."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there is a contrast in material color, but there are no stripes and no layers."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "47",
+    "image": "resize256_grain_dataset_208/122_img20210818_11012996.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image depict wood grain that you find appealing? Please start with yes or no, followed by your reasons."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there are no stripes, the stripes are generally blurred, and there are no layers."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "48",
+    "image": "resize256_grain_dataset_208/002_img20210916_11050196.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the wood grain exhibited in this image resonate with your taste? Respond initially with yes or no, and then provide an elaboration of your reasoning."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there is no material color contrast, but there are three darker stripes towards the top and two below the middle."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "49",
+    "image": "resize256_grain_dataset_208/004_img20210825_09070512.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the wood grain exhibited in this image resonate with your taste? Respond initially with yes or no, and then provide an elaboration of your reasoning."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are evenly distributed dark stripes throughout, and there is a material color contrast."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "50",
+    "image": "resize256_grain_dataset_208/006_img20210916_12391300.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this the type of wood grain you typically appreciate? Kindly indicate yes or no at the beginning, then proceed to outline the reasons for your response."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there is a material color contrast, and there are dark stripes towards the bottom and on the middle right side."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "51",
+    "image": "resize256_grain_dataset_208/007_img20211004_08552385.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDo you consider the wood grain shown here as preferable? Kindly respond with yes or no initially, and then describe the factors that influenced your decision."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are four dark stripes around the middle, there is a material color contrast, and the undulation at the bottom is natural."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "52",
+    "image": "resize256_grain_dataset_208/008_img20211015_14311659.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the wood grain exhibited in this image resonate with your taste? Respond initially with yes or no, and then provide an elaboration of your reasoning."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are dark stripes in the middle and towards the top, and there is a material color contrast."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "53",
+    "image": "resize256_grain_dataset_208/012_img20211015_13372314.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWould you say this wood grain meets your standards for visual appeal? Please answer first with yes or no, followed by a justification of your viewpoint."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are evenly distributed brownish stripes throughout, and there is a material color contrast."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "54",
+    "image": "resize256_grain_dataset_208/013_img20211004_09251311.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDo you consider the wood grain shown here as preferable? Kindly respond with yes or no initially, and then describe the factors that influenced your decision."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there is a material color contrast, and there are three darker stripes above the middle."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "55",
+    "image": "resize256_grain_dataset_208/016_img20210830_09004309.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this image the preferred grain? Please answer first with yes or no and then give the reason for your decision."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are evenly distributed brownish stripes throughout."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "56",
+    "image": "resize256_grain_dataset_208/018_img20211018_14381633.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this particular wood grain pattern one that you find attractive? Please commence your response with yes or no, and then provide a detailed explanation of your choice."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are two dark stripes in the middle, and there is a material color contrast."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "57",
+    "image": "resize256_grain_dataset_208/020_img20210916_11034914.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image depict wood grain that you find appealing? Please start with yes or no, followed by your reasons."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there is a material color contrast, and there are two dark stripes in the middle."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "58",
+    "image": "resize256_grain_dataset_208/025_img20211015_14435177.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the wood grain exhibited in this image resonate with your taste? Respond initially with yes or no, and then provide an elaboration of your reasoning."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are black stripes in the middle, below the middle, and at the bottom, and there are layers, and there is a contrast in the material color at the top."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "59",
+    "image": "resize256_grain_dataset_208/026_img20211018_14240864.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the wood grain exhibited in this image resonate with your taste? Respond initially with yes or no, and then provide an elaboration of your reasoning."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are dark stripes above the middle, in the middle, and below, and there is a contrast in the material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "60",
+    "image": "resize256_grain_dataset_208/033_img20210916_13351618.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the wood grain exhibited in this image resonate with your taste? Respond initially with yes or no, and then provide an elaboration of your reasoning."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are dark stripes above the middle and on the upper right side, and there are brownish stripes below, and there is a contrast in the material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "61",
+    "image": "resize256_grain_dataset_208/035_img20211018_13061152.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWould you say this wood grain meets your standards for visual appeal? Please answer first with yes or no, followed by a justification of your viewpoint."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there is one dark stripe on the upper right side, and there is a contrast in the material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "62",
+    "image": "resize256_grain_dataset_208/038_img20211015_11052969.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image present a wood grain that aligns with your aesthetic preferences? Start your reply with yes or no, then articulate the reasons behind your answer."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there is one black stripe at the top, and stripes that are darker than brown but lighter than dark in the middle and below, and there is a contrast in the material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "63",
+    "image": "resize256_grain_dataset_208/041_img20210916_13562886.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this the type of wood grain you typically appreciate? Kindly indicate yes or no at the beginning, then proceed to outline the reasons for your response."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are dark stripes on the upper right side and above the middle, a brownish stripe in the middle, and there is a contrast in the material color below the middle."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "64",
+    "image": "resize256_grain_dataset_208/050_img20211018_14113749.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the wood grain exhibited in this image resonate with your taste? Respond initially with yes or no, and then provide an elaboration of your reasoning."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are two dark stripes in the middle, and there is a contrast in the material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "65",
+    "image": "resize256_grain_dataset_208/054_img20210818_10044060.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDo you consider the wood grain shown here as preferable? Kindly respond with yes or no initially, and then describe the factors that influenced your decision."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are uniformly dark stripes throughout, and there is also a contrast in the material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "66",
+    "image": "resize256_grain_dataset_208/055_img20211018_13193978.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs the wood grain in this picture to your liking? Answer with yes or no first, then explain why."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are no dark stripes above the middle, but there are uniformly dark stripes from the middle downwards."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "67",
+    "image": "resize256_grain_dataset_208/056_img20211018_14300166.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs the wood grain in this picture to your liking? Answer with yes or no first, then explain why."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are uniformly dark stripes throughout, and there is also a contrast in the material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "68",
+    "image": "resize256_grain_dataset_208/061_img20211004_09325556.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWould you say this wood grain meets your standards for visual appeal? Please answer first with yes or no, followed by a justification of your viewpoint."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are five dark stripes near the middle, and there is also a contrast in the material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "69",
+    "image": "resize256_grain_dataset_208/065_img20210916_13255594.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWould you say this wood grain meets your standards for visual appeal? Please answer first with yes or no, followed by a justification of your viewpoint."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are no layers, but there are uniformly dark stripes throughout."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "70",
+    "image": "resize256_grain_dataset_208/069_img20211004_09043467.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs the wood grain in this picture to your liking? Answer with yes or no first, then explain why."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are uniformly dark stripes throughout, and there is a contrast in the material color, and the undulation at the bottom is natural."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "71",
+    "image": "resize256_grain_dataset_208/078_img20211004_09241318.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this the type of wood grain you typically appreciate? Kindly indicate yes or no at the beginning, then proceed to outline the reasons for your response."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are uniformly dark stripes throughout, and there is also a contrast in the material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "72",
+    "image": "resize256_grain_dataset_208/118_img20210818_09582231.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWould you say this wood grain meets your standards for visual appeal? Please answer first with yes or no, followed by a justification of your viewpoint."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there is one dark stripe on the right side of the middle and bottom, and one brownish stripe at the top, and there are layers."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "73",
+    "image": "resize256_grain_dataset_208/125_img20210818_11140023.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs the wood grain in this picture to your liking? Answer with yes or no first, then explain why."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are no layers, but there are three stripes darker than a certain darkness in the middle, and there is a contrast in material color at the top."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "74",
+    "image": "resize256_grain_dataset_208/132_img20210825_08471100.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs the wood grain in this picture to your liking? Answer with yes or no first, then explain why."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are no dark stripes, but there is a uniform contrast in material color throughout."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "75",
+    "image": "resize256_grain_dataset_208/144_img20210830_08523897.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image present a wood grain that aligns with your aesthetic preferences? Start your reply with yes or no, then articulate the reasons behind your answer."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because the layers are blurred, but there is one black stripe above the middle, one dark stripe in the middle, and the undulation below the middle is natural."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "76",
+    "image": "resize256_grain_dataset_208/148_img20210830_09014201.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image present a wood grain that aligns with your aesthetic preferences? Start your reply with yes or no, then articulate the reasons behind your answer."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are no layers, but there are black stripes in the middle and above, one brownish stripe below the middle, and there is a contrast in material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "77",
+    "image": "resize256_grain_dataset_208/150_img20210830_09081033.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image present a wood grain that aligns with your aesthetic preferences? Start your reply with yes or no, then articulate the reasons behind your answer."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there is a dark stripe in the middle, stripes darker than brown but lighter than a certain darkness above the middle, and there is a contrast in material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "78",
+    "image": "resize256_grain_dataset_208/158_img20210916_10595717.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWould you say this wood grain meets your standards for visual appeal? Please answer first with yes or no, followed by a justification of your viewpoint."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are no layers, but there are two stripes darker than brown and lighter than a certain darkness in the middle, and a dark stripe below, there is a contrast in material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "79",
+    "image": "resize256_grain_dataset_208/162_img20210916_11313381.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this image the preferred grain? Please answer first with yes or no and then give the reason for your decision."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are no layers, but there are two stripes darker than brown and lighter than a certain darkness in the middle, and similar stripes above and below, there is a contrast in material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "80",
+    "image": "resize256_grain_dataset_208/167_img20210916_12570069.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this particular wood grain pattern one that you find attractive? Please commence your response with yes or no, and then provide a detailed explanation of your choice."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are no layers, but there are three dark stripes at the top, a brownish stripe below the middle, and there is a contrast in material color, and the undulation at the top is natural."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "81",
+    "image": "resize256_grain_dataset_208/169_img20210916_13073352.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this particular wood grain pattern one that you find attractive? Please commence your response with yes or no, and then provide a detailed explanation of your choice."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are no layers, but there is a material color contrast on the upper part, and there are four dark stripes, with stripes evenly throughout."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "82",
+    "image": "resize256_grain_dataset_208/170_img20210916_13192322.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image present a wood grain that aligns with your aesthetic preferences? Start your reply with yes or no, then articulate the reasons behind your answer."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are no layers and no material color contrast, but there are four dark stripes, with stripes evenly throughout."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "83",
+    "image": "resize256_grain_dataset_208/172_img20210916_13440268.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs the wood grain in this picture to your liking? Answer with yes or no first, then explain why."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because the material color contrast is weak and the layers are blurred, but there is a black stripe on the upper and lower middle, and a brownish stripe on the upper middle, with stripes evenly throughout."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "84",
+    "image": "resize256_grain_dataset_208/174_img20210916_13564580.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWould you say this wood grain meets your standards for visual appeal? Please answer first with yes or no, followed by a justification of your viewpoint."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are no layers, but there are two stripes darker than brown and lighter than a certain darkness in the middle, and similar stripes above and below, there is a contrast in material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "85",
+    "image": "resize256_grain_dataset_208/176_img20211004_09131421.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the wood grain exhibited in this image resonate with your taste? Respond initially with yes or no, and then provide an elaboration of your reasoning."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are no layers, but there is one brownish stripe above the middle, a brownish stripe and a dark stripe below the middle, and there is a contrast in material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "86",
+    "image": "resize256_grain_dataset_208/181_img20211015_13300207.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this image the preferred grain? Please answer first with yes or no and then give the reason for your decision."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are no layers and weak contrast below the middle, but there is one dark stripe in the middle, stripes darker than brown and lighter than dark above and below, and there is material color contrast above the middle."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "87",
+    "image": "resize256_grain_dataset_208/182_img20211015_14150076.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image present a wood grain that aligns with your aesthetic preferences? Start your reply with yes or no, then articulate the reasons behind your answer."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are no layers and the contrast is weak above the middle, but there are dark stripes in the middle and below, and there is material color contrast."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "88",
+    "image": "resize256_grain_dataset_208/184_img20211015_14223922.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image depict wood grain that you find appealing? Please start with yes or no, followed by your reasons."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there is one dark stripe in the middle and there is an even material color contrast throughout."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "89",
+    "image": "resize256_grain_dataset_208/187_img20211015_15525026.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDo you consider the wood grain shown here as preferable? Kindly respond with yes or no initially, and then describe the factors that influenced your decision."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are no layers, but there is one dark stripe in the middle, brownish stripes above and below, and there is material color contrast."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "90",
+    "image": "resize256_grain_dataset_208/191_img20211018_13131878.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this particular wood grain pattern one that you find attractive? Please commence your response with yes or no, and then provide a detailed explanation of your choice."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because the layers are blurred, but there is a single dark stripe in the upper middle, and there is also a contrast in the material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "91",
+    "image": "resize256_grain_dataset_208/192_img20211018_13145684.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image depict wood grain that you find appealing? Please start with yes or no, followed by your reasons."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are no distinct dark stripes, but there are brownish stripes in the middle top and bottom, creating a contrast with the material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "92",
+    "image": "resize256_grain_dataset_208/195_img20211018_14152279.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image present a wood grain that aligns with your aesthetic preferences? Start your reply with yes or no, then articulate the reasons behind your answer."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are no distinct dark stripes, but there are uniformly distributed brownish stripes throughout, creating a clear contrast with the material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "93",
+    "image": "resize256_grain_dataset_208/196_img20211018_14251595.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image depict wood grain that you find appealing? Please start with yes or no, followed by your reasons."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there is a single black stripe in the lower middle, and there are evenly distributed brownish stripes throughout, and there is also a contrast in the material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "94",
+    "image": "resize256_grain_dataset_208/197_img20211018_14263507.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the wood grain exhibited in this image resonate with your taste? Respond initially with yes or no, and then provide an elaboration of your reasoning."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there is a single dark stripe towards the bottom, a brownish stripe in the lower middle, and a contrast in the material color towards the top."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "95",
+    "image": "resize256_grain_dataset_208/203_img20211018_13433191.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image present a wood grain that aligns with your aesthetic preferences? Start your reply with yes or no, then articulate the reasons behind your answer."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there is one dark stripe below, two brownish stripes on the right side above, and an evenly distributed material color contrast throughout."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "96",
+    "image": "resize256_grain_dataset_208/208_img20211015_13285469.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDo you consider the wood grain shown here as preferable? Kindly respond with yes or no initially, and then describe the factors that influenced your decision."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are stripes darker than brown in the middle lower part and there is material color contrast."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  }
+]

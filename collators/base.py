@@ -12,12 +12,15 @@ class BaseDataCollator(ABC, object):
         config: Optional[AutoConfig] = None,
         tokenizer: Optional[PreTrainedTokenizer] = None,
         processor: Optional[AutoProcessor] = None,
-        mask_question_tokens: bool = True
+        mask_question_tokens: bool = True,
+        usage_mode: str = "train" # "train" or "eval"
+
     ) -> None:
         self.config = config
         self.tokenizer = tokenizer
         self.processor = processor
         self.mask_question_tokens = mask_question_tokens
+        self.usage_mode = usage_mode
     
     @property
     def IGNORE_TOKEN_ID(self) -> int:

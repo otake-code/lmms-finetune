@@ -1,0 +1,497 @@
+[
+  {
+    "id": "0",
+    "image": "/home/okada/llama3_feature/grain_dataset/resize256_grain_dataset_208/052_img20211015_11131024.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs the wood grain in this picture to your liking? Answer with yes or no first, then explain why."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there are no stripes."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "1",
+    "image": "/home/okada/llama3_feature/grain_dataset/resize256_grain_dataset_208/146_img20210830_08552523.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the wood grain exhibited in this image resonate with your taste? Respond initially with yes or no, and then provide an elaboration of your reasoning."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there are two dark stripes in the middle, there are layers above, but no layers in other parts, and there is no contrast in material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "2",
+    "image": "/home/okada/llama3_feature/grain_dataset/resize256_grain_dataset_208/082_img20211019_08342954.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image showcase a wood grain pattern that you find visually pleasing? Please respond starting with yes or no, and then delve into the specifics of your preference."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there is a black stripe in the middle, but no other stripes, no layers, and no contrast in the material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "3",
+    "image": "/home/okada/llama3_feature/grain_dataset/resize256_grain_dataset_208/130_img20210825_08293322.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the wood grain exhibited in this image resonate with your taste? Respond initially with yes or no, and then provide an elaboration of your reasoning."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there are several brownish stripes, but no stripes darker than a certain darkness, the layers are blurred, and there is no contrast in material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "4",
+    "image": "/home/okada/llama3_feature/grain_dataset/resize256_grain_dataset_208/017_img20211015_13401086.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image present a wood grain that aligns with your aesthetic preferences? Start your reply with yes or no, then articulate the reasons behind your answer."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there is a material color contrast but no stripes."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "5",
+    "image": "/home/okada/llama3_feature/grain_dataset/resize256_grain_dataset_208/094_img20210916_13101594.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs the wood grain in this picture to your liking? Answer with yes or no first, then explain why."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there are no stripes, no layers, and no contrast in the material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "6",
+    "image": "/home/okada/llama3_feature/grain_dataset/resize256_grain_dataset_208/093_img20210818_10374530.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDo you consider the wood grain shown here as preferable? Kindly respond with yes or no initially, and then describe the factors that influenced your decision."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there are brownish stripes, but the stripes are overall blurred, there are no layers, and no contrast in the material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "7",
+    "image": "/home/okada/llama3_feature/grain_dataset/resize256_grain_dataset_208/156_img20210830_09270994.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image depict wood grain that you find appealing? Please start with yes or no, followed by your reasons."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there is a contrast in the material color, but there are no stripes and no layers."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "8",
+    "image": "/home/okada/llama3_feature/grain_dataset/resize256_grain_dataset_208/121_img20210818_10494176.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this image the preferred grain? Please answer first with yes or no and then give the reason for your decision."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there is one dark stripe at the top, but the layers are blurred, there is no contrast in the material color, and no well-balanced contrast throughout."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "9",
+    "image": "/home/okada/llama3_feature/grain_dataset/resize256_grain_dataset_208/201_img20211019_08504872.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the wood grain exhibited in this image resonate with your taste? Respond initially with yes or no, and then provide an elaboration of your reasoning."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there are no stripes, the material color contrast is weak, and the layers are blurred."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "10",
+    "image": "/home/okada/llama3_feature/grain_dataset/resize256_grain_dataset_208/032_img20211015_14395354.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes the wood grain exhibited in this image resonate with your taste? Respond initially with yes or no, and then provide an elaboration of your reasoning."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there are no stripes, no contrast in the material color, and the layers are blurred."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "11",
+    "image": "/home/okada/llama3_feature/grain_dataset/resize256_grain_dataset_208/085_img20211018_13572020.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this the type of wood grain you typically appreciate? Kindly indicate yes or no at the beginning, then proceed to outline the reasons for your response."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there are no stripes darker than a certain degree, no layers, and the entire area is of the same color range with no contrast in the material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "12",
+    "image": "/home/okada/llama3_feature/grain_dataset/resize256_grain_dataset_208/036_img20211015_15460486.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWould you say this wood grain meets your standards for visual appeal? Please answer first with yes or no, followed by a justification of your viewpoint."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there are brownish stripes uniformly throughout, but there are no stripes darker than that."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "13",
+    "image": "/home/okada/llama3_feature/grain_dataset/resize256_grain_dataset_208/164_img20210916_12383959.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWould you say this wood grain meets your standards for visual appeal? Please answer first with yes or no, followed by a justification of your viewpoint."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there is one dark stripe at the top, but the contrast in material color is weak and the layers are blurred."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "14",
+    "image": "/home/okada/llama3_feature/grain_dataset/resize256_grain_dataset_208/088_img20211015_14351675.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image present a wood grain that aligns with your aesthetic preferences? Start your reply with yes or no, then articulate the reasons behind your answer."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there are brownish stripes, and there are layers below the middle, but no stripes darker than a certain degree, and no contrast in the material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "15",
+    "image": "/home/okada/llama3_feature/grain_dataset/resize256_grain_dataset_208/095_img20210818_10250442.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs the wood grain in this picture to your liking? Answer with yes or no first, then explain why."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there are some layers at the top, but no contrast in the material color, and no stripes darker than a certain darkness."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "16",
+    "image": "/home/okada/llama3_feature/grain_dataset/resize256_grain_dataset_208/186_img20211015_14462180.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWould you say this wood grain meets your standards for visual appeal? Please answer first with yes or no, followed by a justification of your viewpoint."
+      },
+      {
+        "from": "gpt",
+        "value": "No, because there is a brownish stripe in the upper middle, but there are no dark stripes, no layers, and no material color contrast."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "17",
+    "image": "/home/okada/llama3_feature/grain_dataset/resize256_grain_dataset_208/009_img20210916_12325865.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWould you say this wood grain meets your standards for visual appeal? Please answer first with yes or no, followed by a justification of your viewpoint."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are no layers, but there are evenly distributed dark stripes in the middle and towards the bottom."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "18",
+    "image": "/home/okada/llama3_feature/grain_dataset/resize256_grain_dataset_208/021_img20211015_15452918.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image present a wood grain that aligns with your aesthetic preferences? Start your reply with yes or no, then articulate the reasons behind your answer."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are dark stripes at the top and middle, and there are layers."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "19",
+    "image": "/home/okada/llama3_feature/grain_dataset/resize256_grain_dataset_208/022_img20210916_13580224.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this the type of wood grain you typically appreciate? Kindly indicate yes or no at the beginning, then proceed to outline the reasons for your response."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are two dark stripes above the middle and one brownish stripe in the middle, and there are layers."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "20",
+    "image": "/home/okada/llama3_feature/grain_dataset/resize256_grain_dataset_208/024_img20210916_11415436.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this particular wood grain pattern one that you find attractive? Please commence your response with yes or no, and then provide a detailed explanation of your choice."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there is no contrast in the material color, but there are several black stripes around the middle."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "21",
+    "image": "/home/okada/llama3_feature/grain_dataset/resize256_grain_dataset_208/027_img20211015_13382471.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image showcase a wood grain pattern that you find visually pleasing? Please respond starting with yes or no, and then delve into the specifics of your preference."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there is a dark stripe in the middle, and there is also a contrast in the material color, and there are layers."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "22",
+    "image": "/home/okada/llama3_feature/grain_dataset/resize256_grain_dataset_208/030_img20210916_10543413.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this the type of wood grain you typically appreciate? Kindly indicate yes or no at the beginning, then proceed to outline the reasons for your response."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are uniformly dark stripes throughout."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "23",
+    "image": "/home/okada/llama3_feature/grain_dataset/resize256_grain_dataset_208/043_img20211018_14385452.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this particular wood grain pattern one that you find attractive? Please commence your response with yes or no, and then provide a detailed explanation of your choice."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there is one dark stripe on the upper right side, and the contrast in the material color is clear."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "24",
+    "image": "/home/okada/llama3_feature/grain_dataset/resize256_grain_dataset_208/044_img20210830_08523897.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image showcase a wood grain pattern that you find visually pleasing? Please respond starting with yes or no, and then delve into the specifics of your preference."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there is one black stripe above the middle, one dark stripe in the middle, and brownish stripes above and below."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "25",
+    "image": "/home/okada/llama3_feature/grain_dataset/resize256_grain_dataset_208/064_img20211018_14333636.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image depict wood grain that you find appealing? Please start with yes or no, followed by your reasons."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there is one dark stripe in the middle, there are layers, and there is also a contrast in the material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "26",
+    "image": "/home/okada/llama3_feature/grain_dataset/resize256_grain_dataset_208/096_img20211004_08532371.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWould you say this wood grain meets your standards for visual appeal? Please answer first with yes or no, followed by a justification of your viewpoint."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are no layers, but there are well-balanced stripes throughout that are darker than brown but lighter than dark."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "27",
+    "image": "/home/okada/llama3_feature/grain_dataset/resize256_grain_dataset_208/110_img20211004_09080226.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this the type of wood grain you typically appreciate? Kindly indicate yes or no at the beginning, then proceed to outline the reasons for your response."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are no layers, but the stripes are well-balanced throughout, darker than brown but lighter than dark, and the undulation at the bottom is natural."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "28",
+    "image": "/home/okada/llama3_feature/grain_dataset/resize256_grain_dataset_208/117_img20210818_09563777.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWould you say this wood grain meets your standards for visual appeal? Please answer first with yes or no, followed by a justification of your viewpoint."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there is one dark stripe at the bottom, one thick brownish stripe in the middle, and clear layers at the top."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "29",
+    "image": "/home/okada/llama3_feature/grain_dataset/resize256_grain_dataset_208/126_img20210818_11150528.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nWould you say this wood grain meets your standards for visual appeal? Please answer first with yes or no, followed by a justification of your viewpoint."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there are dark stripes at the top and middle bottom, and there is a contrast in material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "30",
+    "image": "/home/okada/llama3_feature/grain_dataset/resize256_grain_dataset_208/140_img20210830_08275275.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nDoes this image showcase a wood grain pattern that you find visually pleasing? Please respond starting with yes or no, and then delve into the specifics of your preference."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because the layers are blurred, but there is one black stripe at the top middle and one dark stripe in the middle, and the undulation at the bottom middle is natural."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "31",
+    "image": "/home/okada/llama3_feature/grain_dataset/resize256_grain_dataset_208/147_img20210830_08573139.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this the type of wood grain you typically appreciate? Kindly indicate yes or no at the beginning, then proceed to outline the reasons for your response."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because the layers are blurred, but there are dark stripes above and below the middle, the undulation on the left side of the middle is natural, and there is a contrast in material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  },
+  {
+    "id": "32",
+    "image": "/home/okada/llama3_feature/grain_dataset/resize256_grain_dataset_208/190_img20211018_13100529.png",
+    "conversations": [
+      {
+        "from": "human",
+        "value": "<image>\nIs this particular wood grain pattern one that you find attractive? Please commence your response with yes or no, and then provide a detailed explanation of your choice."
+      },
+      {
+        "from": "gpt",
+        "value": "Yes, because there is a single dark stripe in the middle lower part, and there is also a contrast in the material color."
+      }
+    ],
+    "data_source": "resize256_grain_dataset_208"
+  }
+]

@@ -49,9 +49,22 @@ class TrainingArguments(transformers.TrainingArguments):
     train_vision_projector: bool = field(default=False)
     mask_question_tokens: bool = field(default=True)
 
+    # Stage1 モード：Yes/No 判定ヘッド＋Vision Projector のみ学習
+    stage1: bool = field(
+        default=False,
+        metadata={"help": "If True, run only Stage1: train classifier  vision_projector, freeze everything else."},
+    )
+
     def __post_init__(self):
         super().__post_init__()
         self.remove_unused_columns = False
+
+        # Stage1 モードなら自動でプロジェクターも有効にする
+        if self.stage1:
+            # Vision encoder は常に Freeze
+            self.train_vision_encoder = False
+            # Vision projector は Stage1 で学習対象
+            self.train_vision_projector = True
 
 
 @dataclass

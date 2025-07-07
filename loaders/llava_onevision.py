@@ -1,20 +1,22 @@
 from typing import Tuple
 
-from transformers import AutoProcessor, LlavaOnevisionForConditionalGeneration, PreTrainedTokenizer, AutoConfig
+from transformers import AutoProcessor, PreTrainedTokenizer, AutoConfig
+from models.custom_llava_onevision import LlavaOnevisionForYesNo
 
 from . import register_loader
 from .base import BaseModelLoader
 
-
 @register_loader("llava-onevision")
 class LLaVAOnevisionModelLoader(BaseModelLoader):
-    def load(self, load_model: bool = True) -> Tuple[LlavaOnevisionForConditionalGeneration, PreTrainedTokenizer, AutoProcessor, AutoConfig]:
+    def load(self, load_model: bool = True) -> Tuple[LlavaOnevisionForYesNo, PreTrainedTokenizer, AutoProcessor, AutoConfig]:
         if load_model:
-            model = LlavaOnevisionForConditionalGeneration.from_pretrained(
-                self.model_local_path, 
+            # Stage1 用のカスタムモデルをロード
+            model = LlavaOnevisionForYesNo.from_pretrained(
+                self.model_local_path,
                 **self.loading_kwargs,
             )
-            model.config.hidden_size = model.language_model.config.hidden_size # useful for deepspeed
+            # DeepSpeed 等で必要となる場合に hidden_size を同期
+            model.config.hidden_size = model.language_model.config.hidden_size
         else:
             model = None
 
