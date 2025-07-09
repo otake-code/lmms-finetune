@@ -12,7 +12,6 @@ checkpoints
 ckpts*
 
 .ipynb_checkpoints
-*.ipynb
 
 *.ttf
 
@@ -22,4 +21,4 @@ not_useful_for_now
 
 example_data/videos/ego4d/*.mp4
 
-
+results

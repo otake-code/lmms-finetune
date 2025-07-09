@@ -40,7 +40,8 @@ class GrainYesNoDataset(Dataset):
     def __getitem__(self, idx):
         rec = self.records[idx]
         from PIL import Image
-        img = Image.open(os.path.join(self.image_folder, rec["images"][0])).convert("RGB")
+        img_path = rec["images"][0]
+        img = Image.open(os.path.join(self.image_folder, img_path)).convert("RGB")
         enc = self.processor(
             text=[rec["conversations"][0]],
             images=[img],
@@ -51,11 +52,15 @@ class GrainYesNoDataset(Dataset):
         )
         ans = rec["conversations"][1].strip().lower()
         label = 1.0 if (ans.startswith("yes") or ans == "1") else 0.0
+        
         return {
             "pixel_values": enc["pixel_values"][0],
             "input_ids":     enc["input_ids"][0],
             "image_sizes":   enc["image_sizes"][0],
             "labels":        torch.tensor(label, dtype=torch.float),
+            # メタデータを追加
+            "source":        rec.get("source", idx),  # JSON の source フィールド、なければ idx
+            "image_path":    img_path,                # 画像ファイルのパス
         }
 
 # ──────────────────────────────────────────────────────

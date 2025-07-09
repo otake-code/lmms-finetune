@@ -34,7 +34,7 @@ OUTPUT_BASE="results/kansei/stage1"
 for kf in "${KF_LIST[@]}"; do
   # fold ごとのパス
   # MODEL_DIR="${MODEL_BASE}/kf${kf}/checkpoint-5"
-  MODEL_DIR="/home/okada/vlm/lmms-finetune/checkpoints/kansei/yesno/llava-ov_ft_kansei_/checkpoint-5/"
+  MODEL_DIR="/home/okada/vlm/lmms-finetune/checkpoints/kansei/yesno/bs1_lr1e-5_ep30_2025-07-08T16_35_58/checkpoint-1"
   TEST_JSON="${TEST_JSON_BASE}/test${kf}_finetune_data_onevision.jsonl"
   OUTPUT_DIR="${OUTPUT_BASE}_kf${kf}"
   mkdir -p "${OUTPUT_DIR}"
@@ -43,6 +43,7 @@ for kf in "${KF_LIST[@]}"; do
 
   python test_stage1_inference.py \
     --model_dir     "${MODEL_DIR}" \
+    --base_model    "llava-hf/llava-onevision-qwen2-0.5b-ov-hf" \
     --jsonl_path    "${TEST_JSON}" \
     --image_folder  "${IMAGE_FOLDER}" \
     --max_length    "${MAX_LENGTH}" \
