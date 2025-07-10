@@ -33,10 +33,8 @@ class LlavaOnevisionForYesNo(LlavaOnevisionForConditionalGeneration):
             return_dict=True,
             **kwargs
         )
-
-        # import pdb; pdb.set_trace()
         last_hidden = outputs.hidden_states[-1]
-        pooled = last_hidden[:, 0, :]
+        pooled = last_hidden[:, -1, :]
         logits = self.classifier(pooled)
         probs  = self.sigmoid(logits)
 

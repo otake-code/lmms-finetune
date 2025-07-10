@@ -2,7 +2,7 @@
 set -e
 
 # モデルチェックポイントの親ディレクトリ
-MODEL_BASE="/home/okada/vlm/lmms-finetune/checkpoints/mnist/yesno"
+MODEL_BASE="/home/okada/vlm/lmms-finetune/checkpoints/mnist/alltoken"
 
 # 推論用 JSONL
 TEST_JSON="/home/okada/vlm/lmms-finetune/jsons/mnist/mnist_test.jsonl"
@@ -14,11 +14,11 @@ IMAGE_FOLDER="/dataset/mnist"
 BASE_MODEL="llava-hf/llava-onevision-qwen2-0.5b-ov-hf"
 
 # 出力先親ディレクトリ
-OUTPUT_BASE="results/mnist/stage1/check"
+OUTPUT_BASE="results/mnist/alltoken"
 
 # 推論パラメータ
 BATCH_SIZE=1
-MAX_LENGTH=512
+MAX_LENGTH=1024 #finetune時と揃える
 DEVICE="cuda"
 
 for RUN_DIR in "${MODEL_BASE}"/*/; do
@@ -31,11 +31,11 @@ for RUN_DIR in "${MODEL_BASE}"/*/; do
     CKPT_NAME=$(basename "${MODEL_DIR}")  # checkpoint-1, checkpoint-3, …
 
     # 出力先を bs1/lr1e-5/checkpoint-1/ 以下に置く
-    OUTPUT_DIR="check/${OUTPUT_BASE}/${BS_PART}/${LR_PART}/${CKPT_NAME}"
+    OUTPUT_DIR="${OUTPUT_BASE}/${BS_PART}/${LR_PART}/${CKPT_NAME}"
     mkdir -p "${OUTPUT_DIR}"
 
     echo ">>> 推論: ${BS_PART} / ${LR_PART} / ${CKPT_NAME}"
-    python test_stage1_inference.py \
+    python test_stage1_inference_token1.py \
       --base_model   "${BASE_MODEL}" \
       --model_dir    "${MODEL_DIR}" \
       --jsonl_path   "${TEST_JSON}" \

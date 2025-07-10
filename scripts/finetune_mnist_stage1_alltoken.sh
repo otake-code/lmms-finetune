@@ -15,8 +15,8 @@ IMAGE_FOLDER=/dataset/mnist
 
 # ハイパーパラメータのリスト
 BATCH_SIZES=(1)
-LEARNING_RATES=(1e-6)
-EPOCHS=(10)
+LEARNING_RATES=(1e-6 5e-6 1e-5 )
+EPOCHS=(30)
 
 # 固定の設定
 TRAIN_VISION_ENCODER=False
@@ -24,7 +24,7 @@ USE_VISION_LORA=False
 TRAIN_VISION_PROJECTOR=True
 DS_STAGE=zero3
 GRAD_ACCUM=32
-MODEL_MAX_LEN=2048
+MODEL_MAX_LEN=1024
 
 for BS in "${BATCH_SIZES[@]}"; do
   for LR in "${LEARNING_RATES[@]}"; do
@@ -32,14 +32,14 @@ for BS in "${BATCH_SIZES[@]}"; do
 
       DATE=$(date '+%Y-%m-%dT%H_%M_%S')
       GLOBAL_BS=$((BS * NUM_GPUS * GRAD_ACCUM))
-      RUN_ID="gbs${GLOBAL_BS}_lr${LR}_ep${EP}_mnist_len32768_$DATE"
+      RUN_ID="gbs${GLOBAL_BS}_lr${LR}_ep${EP}_alltoken_mnisit_$DATE"
 
-      torchrun $DISTRIBUTED_ARGS train_add_head.py \
+      torchrun $DISTRIBUTED_ARGS train_add_head_alltoken.py \
         --model_id $MODEL_ID \
         --model_local_path $MODEL_LOCAL_PATH \
         --data_path $TRAIN_DATA_PATH \
         --image_folder $IMAGE_FOLDER \
-        --output_dir ./checkpoints/mnist/len_32768/${RUN_ID} \
+        --output_dir ./checkpoints/mnist/alltoken/${RUN_ID} \
         --run_name $RUN_ID \
         --deepspeed ./ds_configs/${DS_STAGE}.json \
         --bf16 False \
@@ -49,6 +49,7 @@ for BS in "${BATCH_SIZES[@]}"; do
         --per_device_eval_batch_size $BS \
         --gradient_accumulation_steps $GRAD_ACCUM \
         --save_strategy "epoch" \
+        --save_total_limit 3 \
         --learning_rate ${LR} \
         --weight_decay 0. \
         --warmup_ratio 0.03 \
@@ -66,5 +67,3 @@ for BS in "${BATCH_SIZES[@]}"; do
     done
   done
 done
-
-

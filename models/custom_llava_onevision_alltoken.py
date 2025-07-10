@@ -11,10 +11,12 @@ class LlavaOnevisionForYesNo(LlavaOnevisionForConditionalGeneration):
         config.output_hidden_states = True
         config.return_dict_in_generate = True
         super().__init__(config)
+
         hidden_size = config.text_config.hidden_size
+        # トークンごとにスコアを出す線形層
         self.classifier = nn.Linear(hidden_size, 1)
-        self.sigmoid = nn.Sigmoid()
-        self.mse_loss = nn.MSELoss()
+        self.sigmoid    = nn.Sigmoid()
+        self.mse_loss   = nn.MSELoss()
 
     def forward(
         self,
@@ -25,6 +27,7 @@ class LlavaOnevisionForYesNo(LlavaOnevisionForConditionalGeneration):
         labels=None,
         **kwargs
     ):
+        # ベースモデルの出力を取得（hidden_states[-1] が必要）
         outputs = super().forward(
             input_ids=input_ids,
             pixel_values=pixel_values,
@@ -33,20 +36,30 @@ class LlavaOnevisionForYesNo(LlavaOnevisionForConditionalGeneration):
             return_dict=True,
             **kwargs
         )
+        last_hidden = outputs.hidden_states[-1]  # [batch, seq_len, hidden_size]
 
-        # import pdb; pdb.set_trace()
-        last_hidden = outputs.hidden_states[-1]
-        pooled = last_hidden[:, 0, :]
-        logits = self.classifier(pooled)
-        probs  = self.sigmoid(logits)
+        # 全トークンに同じ線形層を適用 ⇒ [batch, seq_len, 1]
+        token_logits = self.classifier(last_hidden)
+        token_logits = token_logits.squeeze(-1)   # [batch, seq_len]
+
+        # トークンごとの確率
+        token_probs  = self.sigmoid(token_logits) # [batch, seq_len]
+
+        # シーケンス全体の yes 確率（平均プーリング）
+        seq_prob     = token_probs.mean(dim=1)    # [batch]
 
         loss = None
         if labels is not None:
-            labels = labels.float().view_as(probs)
-            loss = self.mse_loss(probs.half(), labels.half())
+            # labels: [batch] の 0/1
+            labels = labels.float().view_as(seq_prob)
+            # MSELoss で seq_prob と比較
+            loss = self.mse_loss(seq_prob.half(), labels.half())
 
-        outputs["yesno_logits"] = logits
-        outputs["yesno_probs"]  = probs
+        # 出力に追加
+        outputs["yesno_token_logits"] = token_logits
+        outputs["yesno_token_probs"]  = token_probs
+        outputs["yesno_seq_prob"]     = seq_prob
         if loss is not None:
             outputs["loss"] = loss
+
         return outputs

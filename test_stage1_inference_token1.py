@@ -10,7 +10,7 @@ from transformers import AutoProcessor
 
 from safetensors.torch import load_file as safe_load_file
 from models.custom_llava_onevision import LlavaOnevisionForYesNo
-from test_add_head import GrainYesNoDataset
+from test_add_head_token1 import GrainYesNoDataset
 
 
 def parse_args():
@@ -36,12 +36,6 @@ def parse_args():
 
 def main():
     args = parse_args()
-
-    # 出力 CSV がすでに存在し、かつサイズが 0 以上（＝何らかのデータがある）ならスキップ
-    if os.path.exists(args.output_csv) and os.path.getsize(args.output_csv) > 0:
-        tqdm.write(f"[SKIP] {args.output_csv} が既に存在するため、このモデルの推論をスキップします。")
-        return
-
     device = torch.device(args.device if torch.cuda.is_available() else "cpu")
 
     # モデルロード
@@ -68,10 +62,6 @@ def main():
         args.base_model,
         trust_remote_code=True,
     )
-    
-    tokenizer = processor.tokenizer
-    # デバッグしやすいように、モデルにトークナイザーをくっつけておく
-    base.tokenizer = tokenizer
 
     # DataLoader 設定
     test_ds = GrainYesNoDataset(
