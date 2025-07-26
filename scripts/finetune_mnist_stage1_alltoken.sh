@@ -15,8 +15,8 @@ IMAGE_FOLDER=/dataset/mnist
 
 # ハイパーパラメータのリスト
 BATCH_SIZES=(1)
-LEARNING_RATES=(1e-6 5e-6 1e-5 )
-EPOCHS=(30)
+LEARNING_RATES=(5e-6 1e-5)
+EPOCHS=(10)
 
 # 固定の設定
 TRAIN_VISION_ENCODER=False
@@ -49,7 +49,7 @@ for BS in "${BATCH_SIZES[@]}"; do
         --per_device_eval_batch_size $BS \
         --gradient_accumulation_steps $GRAD_ACCUM \
         --save_strategy "epoch" \
-        --save_total_limit 3 \
+        --save_total_limit 1 \
         --learning_rate ${LR} \
         --weight_decay 0. \
         --warmup_ratio 0.03 \
@@ -57,7 +57,7 @@ for BS in "${BATCH_SIZES[@]}"; do
         --logging_steps 1 \
         --tf32 True \
         --model_max_length $MODEL_MAX_LEN \
-        --gradient_checkpointing False \
+        --gradient_checkpointing True \
         --dataloader_num_workers 4 \
         --train_vision_encoder $TRAIN_VISION_ENCODER \
         --use_vision_lora $USE_VISION_LORA \

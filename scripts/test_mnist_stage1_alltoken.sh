@@ -18,7 +18,7 @@ OUTPUT_BASE="results/mnist/alltoken"
 
 # 推論パラメータ
 BATCH_SIZE=1
-MAX_LENGTH=1024 #finetune時と揃える
+MAX_LENGTH=2048 #finetune時と揃える
 DEVICE="cuda"
 
 for RUN_DIR in "${MODEL_BASE}"/*/; do
@@ -35,7 +35,7 @@ for RUN_DIR in "${MODEL_BASE}"/*/; do
     mkdir -p "${OUTPUT_DIR}"
 
     echo ">>> 推論: ${BS_PART} / ${LR_PART} / ${CKPT_NAME}"
-    python test_stage1_inference_token1.py \
+    python test_stage1_inference_alltoken.py \
       --base_model   "${BASE_MODEL}" \
       --model_dir    "${MODEL_DIR}" \
       --jsonl_path   "${TEST_JSON}" \

@@ -2,23 +2,23 @@
 set -e
 
 # モデルチェックポイントの親ディレクトリ
-MODEL_BASE="/home/okada/vlm/lmms-finetune/checkpoints/kansei/yesno/fire_ve"
+MODEL_BASE="/home/okada/vlm/lmms-finetune/checkpoints/snack/yesno"
 
 # 推論用 JSONL
-TEST_JSON="/home/okada/vlm/lmms-finetune/jsons/test0_finetune_data_onevision.jsonl"
+TEST_JSON="/home/okada/vlm/lmms-finetune/jsons/snack/test_snack_yesno.jsonl"
 
 # 画像フォルダ
-IMAGE_FOLDER="/home/okada/iad/LLaVA-NeXT/images"
+IMAGE_FOLDER="/data01/snacks/test"
 
 # ベースモデル ID
 BASE_MODEL="llava-hf/llava-onevision-qwen2-0.5b-ov-hf"
 
 # 出力先親ディレクトリ
-OUTPUT_BASE="results/kansei/stage1/fire_ve"
+OUTPUT_BASE="results/snack/yesno"
 
 # 推論パラメータ
 BATCH_SIZE=1
-MAX_LENGTH=512
+MAX_LENGTH=2048 #finetune時と揃える
 DEVICE="cuda"
 
 for RUN_DIR in "${MODEL_BASE}"/*/; do
@@ -35,7 +35,7 @@ for RUN_DIR in "${MODEL_BASE}"/*/; do
     mkdir -p "${OUTPUT_DIR}"
 
     echo ">>> 推論: ${BS_PART} / ${LR_PART} / ${CKPT_NAME}"
-    python test_stage1_inference.py \
+    python test_stage1_inference_alltoken.py \
       --base_model   "${BASE_MODEL}" \
       --model_dir    "${MODEL_DIR}" \
       --jsonl_path   "${TEST_JSON}" \

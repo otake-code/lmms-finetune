@@ -18,7 +18,7 @@ OUTPUT_BASE="results/mnist/stage1_token-1"
 
 # 推論パラメータ
 BATCH_SIZE=1
-MAX_LENGTH=512
+MAX_LENGTH=2048
 DEVICE="cuda"
 
 for RUN_DIR in "${MODEL_BASE}"/*/; do

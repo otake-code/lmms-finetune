@@ -24,7 +24,7 @@ IMAGE_FOLDER="/home/okada/iad/LLaVA-NeXT/images"
 
 # 推論パラメータ
 BATCH_SIZE=1
-MAX_LENGTH=512
+MAX_LENGTH=2048
 DEVICE="cuda"
 
 # 出力先ベース
