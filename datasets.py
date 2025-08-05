@@ -43,13 +43,13 @@ def read_video_pyav(container, indices):
 
 
 class LazySupervisedDataset(Dataset):
-    """Dataset for supervised fine-tuning 
+    """Dataset for supervised fine-tuning
     which is generalized enough to handle both images and videos.
     """
 
     def __init__(
-        self, 
-        data_path: str, 
+        self,
+        data_path: str,
         model_family_id: str,
         image_folder: Optional[str] = None,
         video_folder: Optional[str] = None,
@@ -74,7 +74,7 @@ class LazySupervisedDataset(Dataset):
     def __len__(self) -> int:
         return len(self.list_data_dict)
 
-    def __getitem__(self, i) -> Dict[str, List]:      
+    def __getitem__(self, i) -> Dict[str, List]:
         source = self.list_data_dict[i]
 
         images = []
@@ -90,7 +90,7 @@ class LazySupervisedDataset(Dataset):
                 image_sources = [source["image"]]
             else:
                 raise ValueError(f"Invalid image source type: {type(source['image'])}")
-            
+
             for image_path in image_sources:
                 if self.image_folder is not None:
                     image_path = os.path.join(self.image_folder, image_path)
@@ -113,14 +113,14 @@ class LazySupervisedDataset(Dataset):
             for video_path, cur_num_frames in zip(video_sources, num_frames):
                 if self.video_folder is not None:
                     video_path = os.path.join(self.video_folder, video_path)
-                
+
                 container = av.open(video_path)
                 total_frames = container.streams.video[0].frames
                 indices = np.arange(0, total_frames, total_frames / cur_num_frames).astype(int)
                 clip = read_video_pyav(container, indices)
 
                 videos.append(clip)
-        
+
         system_prompt = None
         if "system_prompt" in source:
             system_prompt = source["system_prompt"]
@@ -131,7 +131,7 @@ class LazySupervisedDataset(Dataset):
             assert conv["from"] == (self.user_key if i % 2 == 0 else self.assistant_key), "Invalid conversation"
             convs.append(conv["value"])
         assert len(convs) % 2 == 0, "Odd number of conversations"
-        
+
         return dict(
             images=images,
             videos=videos,

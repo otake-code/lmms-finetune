@@ -11,8 +11,8 @@ MAX_LENGTH=2048
 DEVICE="cuda"
 
 # ここだけを指定
-SPECIFIC_RUN_DIR="/home/okada/vlm/lmms-finetune/checkpoints/snack/yesno/gbs128_lr5e-6_ep10_snack2025-07-18T15_22_21"
-SPECIFIC_CKPT="checkpoint-320"
+SPECIFIC_RUN_DIR="/home/okada/vlm/lmms-finetune/checkpoints/snack/yesno/gbs128_lr5e-5_ep100_snack2025-07-27T21_31_00"
+SPECIFIC_CKPT="checkpoint-3200"
 
 MODEL_DIR="${SPECIFIC_RUN_DIR}/${SPECIFIC_CKPT}"
 OUTPUT_DIR="${OUTPUT_BASE}/bs1/lr1e-5/${SPECIFIC_CKPT}"

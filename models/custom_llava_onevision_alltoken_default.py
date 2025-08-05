@@ -33,7 +33,6 @@ class LlavaOnevisionForYesNo(LlavaOnevisionForConditionalGeneration):
             pixel_values=pixel_values,
             image_sizes=image_sizes,
             attention_mask=attention_mask,
-            return_dict=True,
             **kwargs
         )
 

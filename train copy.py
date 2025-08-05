@@ -58,9 +58,9 @@ def train():
         bnb_config = BitsAndBytesConfig(
             load_in_4bit=True,
             bnb_4bit_compute_dtype=compute_dtype,
-            bnb_4bit_quant_type="nf4",
+            bnb_4bit_quant_type="nf4", 
         )
-
+    
     # load model, tokenizer, processor
     rank0_print("Loading model, tokenizer, processor...")
     loader = LOADERS[model_args.model_family_id](
@@ -103,7 +103,7 @@ def train():
     # lora preparation
     llm_keys = MODULE_KEYWORDS[model_args.model_family_id]["llm"]
     if not (lora_args.use_lora or (training_args.train_vision_encoder and lora_args.use_vision_lora)):
-        rank0_print("No LoRA enabled...")
+        rank0_print("No LoRA enabled...")        
     else:
         named_modules = {n: m for n, m in model.named_modules()}
         lora_modules = []
@@ -115,18 +115,18 @@ def train():
         elif training_args.train_vision_encoder:
             rank0_print("Vision encoder will be fully trained...")
             full_modules.extend(vision_encoder_keys)
-
+        
         if lora_args.use_lora:
             rank0_print("LoRA for LLM enabled...")
             lora_modules.extend(find_all_linear_names(named_modules, llm_keys))
         else:
             rank0_print("LLM will be fully trained...")
             full_modules.extend(llm_keys)
-
+        
         if training_args.train_vision_projector:
             rank0_print("Vision projector will be fully trained...")
             full_modules.extend(vision_projector_keys)
-
+        
         lora_config = LoraConfig(
             r=lora_args.lora_r,
             lora_alpha=lora_args.lora_alpha,
@@ -141,9 +141,9 @@ def train():
             model = prepare_model_for_kbit_training(
                 model, use_gradient_checkpointing=training_args.gradient_checkpointing
             )
-
+            
         model = get_peft_model(model, lora_config)
-
+        
     # print trainable parameters for inspection
     rank0_print("Trainable parameters:")
     for name, param in model.named_parameters():
@@ -183,14 +183,6 @@ def train():
         mask_question_tokens=training_args.mask_question_tokens
     )
 
-    # train.py の data_collator 定義直後あたりに
-    orig_collate = data_collator.__call__
-    def patched_collate(features):
-        batch = orig_collate(features)
-        batch.pop("return_dict", None)   # ← これで余計なキーを消す
-        return batch
-    data_collator.__call__ = patched_collate
-
     # trainer
     trainer = TrainerWithCustomSampler(
         model=model,
@@ -203,7 +195,7 @@ def train():
     trainer.save_state()
 
     safe_save_model_for_hf_trainer(trainer=trainer, output_dir=output_dir)
-
+    
 
 if __name__ == "__main__":
     train()

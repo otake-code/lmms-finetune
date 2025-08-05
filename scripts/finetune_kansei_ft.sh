@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#full fine-tuning script for Kansei dataset
 NUM_GPUS=$(nvidia-smi -L | wc -l)
 DISTRIBUTED_ARGS="
     --nnodes=1 \
@@ -10,28 +10,34 @@ DISTRIBUTED_ARGS="
 
 MODEL_ID=llava-onevision-0.5b-ov
 MODEL_LOCAL_PATH=llava-hf/llava-onevision-qwen2-0.5b-ov-hf
-TRAIN_DATA_PATH=/home/okada/vlm/lmms-finetune/jsons/snack/snack_yesno.jsonl
-IMAGE_FOLDER=/data01/snacks
+# TRAIN_DATA_PATH=jsons/train0_finetune_data_onevision.jsonl
+TRAIN_DATA_PATH=jsons/train0_yesno_word.jsonl
+IMAGE_FOLDER=/home/okada/llama3_feature/grain_dataset                      # path to the image root folder; if provided, the image paths in the json should be relative
+
 
 # ハイパーパラメータのリスト
 BATCH_SIZES=(1)
-LEARNING_RATES=(1e-6)
+LEARNING_RATES=(1e-5)
 EPOCHS=(100)
 
 # 固定の設定
-TRAIN_VISION_ENCODER=False
+TRAIN_VISION_ENCODER=True
 USE_VISION_LORA=False
 TRAIN_VISION_PROJECTOR=True
 DS_STAGE=zero3
-GRAD_ACCUM=32
+GRAD_ACCUM=2
 MODEL_MAX_LEN=1024
 SAVE_EPOCHS=50 # 保存間隔＝10エポック分のステップ数
 
 # 1) 学習データ件数を Python でカウント
 TOTAL_EXAMPLES=$(python3 - <<EOF
-import math
-# 各行が1サンプルと仮定
-print(sum(1 for _ in open("${TRAIN_DATA_PATH}", "r")))
+import json
+path = "${TRAIN_DATA_PATH}"
+if path.endswith('.jsonl'):
+    print(sum(1 for _ in open(path, 'r')))
+else:
+    with open(path, 'r') as f:
+        print(len(json.load(f)))
 EOF
 )
 
@@ -59,14 +65,14 @@ EOF
 
       DATE=$(date '+%Y-%m-%dT%H_%M_%S')
       GLOBAL_BS=$((BS * NUM_GPUS * GRAD_ACCUM))
-      RUN_ID="gbs${GLOBAL_BS}_lr${LR}_ep${EP}_snack$DATE"
+      RUN_ID="gbs${GLOBAL_BS}_lr${LR}_ep${EP}_full_ft_kansei$DATE"
 
-      torchrun $DISTRIBUTED_ARGS train_add_head_alltoken.py \
+      torchrun $DISTRIBUTED_ARGS train.py \
         --model_id $MODEL_ID \
         --model_local_path $MODEL_LOCAL_PATH \
         --data_path $TRAIN_DATA_PATH \
         --image_folder $IMAGE_FOLDER \
-        --output_dir ./checkpoints/snack/yesno/${RUN_ID} \
+        --output_dir ./checkpoints/kansei/ft/${RUN_ID} \
         --run_name $RUN_ID \
         --deepspeed ./ds_configs/${DS_STAGE}.json \
         --bf16 False \
@@ -77,7 +83,7 @@ EOF
         --gradient_accumulation_steps $GRAD_ACCUM \
         --save_strategy steps \
         --save_steps $SAVE_STEPS \
-        --save_total_limit 9999\
+        --save_total_limit 10 \
         --learning_rate ${LR} \
         --weight_decay 0. \
         --warmup_ratio 0.03 \
@@ -90,7 +96,6 @@ EOF
         --train_vision_encoder $TRAIN_VISION_ENCODER \
         --use_vision_lora $USE_VISION_LORA \
         --train_vision_projector $TRAIN_VISION_PROJECTOR \
-        --stage1 True
 
     done
   done
