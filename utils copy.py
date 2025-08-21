@@ -14,8 +14,8 @@ from transformers.trainer import has_length
 
 class NoTextOnlyBatchSampler(Sampler):
     r"""
-    Sampler that tries its best to sample batches such that no batch has only
-    text (unimodal) data. This is necessary for training with deepspeed.
+    Sampler that tries its best to sample batches such that no batch has only 
+    text (unimodal) data. This is necessary for training with deepspeed. 
     """
 
     def __init__(
@@ -46,8 +46,8 @@ class NoTextOnlyBatchSampler(Sampler):
         num_batches = math.ceil((len(mm_indices) + len(uni_indices)) / self.mega_batch_size)
         if len(mm_indices) < num_batches:
             raise ValueError(
-                f"{len(mm_indices)} multimodal entries, {num_batches} batches. "
-                "Not enough multimodal data in the dataset, or the batch size is too small. "
+                f"{len(mm_indices)} multimodal entries, {len(num_batches)} batches. "
+                "Not enough multimodal data in the dataset, or the batch size is too small. " 
                 "There will be at least one batch that is text-only, which doesn't work with deepspeed. "
                 "Try increasing the batch size first."
             )
@@ -60,7 +60,7 @@ class NoTextOnlyBatchSampler(Sampler):
         num_uni_indices_in_mega_batch = [len(uni_indices) // num_batches] * num_batches
         for i in range(len(uni_indices) % num_batches):
             num_uni_indices_in_mega_batch[i] += 1
-
+        
         mega_batches = []
         cur_uni_index = 0
         cur_mm_index = 0
@@ -79,9 +79,9 @@ class NoTextOnlyBatchSampler(Sampler):
             else: # last batch
                 mega_batch.extend(mm_indices[cur_mm_index:])
                 assert len(mega_batch) <= self.mega_batch_size, "Last batch is too big."
-
+            
             mega_batches.append(mega_batch)
-
+        
         mega_batch_indices = torch.randperm(len(mega_batches), generator=self.generator)
         mega_batches = [mega_batches[i] for i in mega_batch_indices]
         indices = [i for mega_batch in mega_batches for i in mega_batch]
@@ -99,7 +99,7 @@ class TrainerWithCustomSampler(Trainer):
             world_size=self.args.world_size * self.args.gradient_accumulation_steps,
             is_text_only=is_text_only,
         )
-
+    
     def _get_eval_sampler(self, eval_dataset: torch.utils.data.Dataset) -> Optional[torch.utils.data.Sampler]:
         is_text_only = eval_dataset.is_text_only
         return NoTextOnlyBatchSampler(

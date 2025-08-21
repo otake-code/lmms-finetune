@@ -11,7 +11,7 @@ class LLaVAOnevisionModelLoader(BaseModelLoader):
     def load(self, load_model: bool = True) -> Tuple[LlavaOnevisionForConditionalGeneration, PreTrainedTokenizer, AutoProcessor, AutoConfig]:
         if load_model:
             model = LlavaOnevisionForConditionalGeneration.from_pretrained(
-                self.model_local_path, 
+                self.model_local_path,
                 **self.loading_kwargs,
             )
             model.config.hidden_size = model.language_model.config.hidden_size # useful for deepspeed
@@ -20,5 +20,5 @@ class LLaVAOnevisionModelLoader(BaseModelLoader):
 
         processor = AutoProcessor.from_pretrained(self.model_hf_path)
         tokenizer = processor.tokenizer
-        config = AutoConfig.from_pretrained(self.model_local_path)
+        config = AutoConfig.from_pretrained(self.model_hf_path)
         return model, tokenizer, processor, config

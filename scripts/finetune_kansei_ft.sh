@@ -11,14 +11,14 @@ DISTRIBUTED_ARGS="
 MODEL_ID=llava-onevision-0.5b-ov
 MODEL_LOCAL_PATH=llava-hf/llava-onevision-qwen2-0.5b-ov-hf
 # TRAIN_DATA_PATH=jsons/train0_finetune_data_onevision.jsonl
-TRAIN_DATA_PATH=jsons/train0_yesno_word.jsonl
+TRAIN_DATA_PATH=/home/okada/vlm/lmms-finetune/jsons/train0_yesno_word.json
 IMAGE_FOLDER=/home/okada/llama3_feature/grain_dataset                      # path to the image root folder; if provided, the image paths in the json should be relative
 
 
 # ハイパーパラメータのリスト
-BATCH_SIZES=(1)
-LEARNING_RATES=(1e-5)
-EPOCHS=(100)
+BATCH_SIZES=(2 4 8)
+LEARNING_RATES=(5e-6 1e-6 5e-7)
+EPOCHS=(30)
 
 # 固定の設定
 TRAIN_VISION_ENCODER=True
@@ -26,10 +26,11 @@ USE_VISION_LORA=False
 TRAIN_VISION_PROJECTOR=True
 DS_STAGE=zero3
 GRAD_ACCUM=2
-MODEL_MAX_LEN=1024
-SAVE_EPOCHS=50 # 保存間隔＝10エポック分のステップ数
+MODEL_MAX_LEN=32768
+SAVE_EPOCHS=10 # 保存間隔＝10エポック分のステップ数
 
 # 1) 学習データ件数を Python でカウント
+# .json (リスト形式) と .jsonl (1行1JSON形式) の両方に対応
 TOTAL_EXAMPLES=$(python3 - <<EOF
 import json
 path = "${TRAIN_DATA_PATH}"
@@ -96,6 +97,7 @@ EOF
         --train_vision_encoder $TRAIN_VISION_ENCODER \
         --use_vision_lora $USE_VISION_LORA \
         --train_vision_projector $TRAIN_VISION_PROJECTOR \
+        --report_to wandb \
 
     done
   done

@@ -2,7 +2,7 @@
 set -e
 
 # モデルチェックポイントの親ディレクトリ
-MODEL_BASE="/home/okada/vlm/lmms-finetune/checkpoints/kansei/yesno"
+MODEL_BASE="/home/okada/vlm/lmms-finetune/checkpoints/kansei/yesno_fire_ve"
 
 # 推論用 JSONL
 TEST_JSON="/home/okada/vlm/lmms-finetune/jsons/test0_finetune_data_onevision.jsonl"
@@ -14,7 +14,7 @@ IMAGE_FOLDER="/home/okada/iad/LLaVA-NeXT/images"
 BASE_MODEL="llava-hf/llava-onevision-qwen2-0.5b-ov-hf"
 
 # 出力先親ディレクトリ
-OUTPUT_BASE="results/kansei/stage1"
+OUTPUT_BASE="results/kansei/stage1_fire_ve"
 
 # 推論パラメータ
 BATCH_SIZE=1

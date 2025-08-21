@@ -59,6 +59,8 @@ class LazySupervisedDataset(Dataset):
     ) -> None:
         super(LazySupervisedDataset, self).__init__()
         self.list_data_dict = json.load(open(data_path, "r"))
+        # with open(data_path, "r", encoding="utf-8") as f:
+        #     self.list_data_dict = [json.loads(line) for line in f if line.strip()]
         self.image_folder = image_folder
         self.video_folder = video_folder
         self.num_frames = num_frames

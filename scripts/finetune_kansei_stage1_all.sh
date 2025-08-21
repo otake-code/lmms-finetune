@@ -17,17 +17,17 @@ IMAGE_FOLDER=/home/okada/llama3_feature/grain_dataset                      # pat
 
 # ハイパーパラメータのリスト
 BATCH_SIZES=(1)
-LEARNING_RATES=(5e-6)
-EPOCHS=(200)
+LEARNING_RATES=(1e-5 5e-6 1e-6)
+EPOCHS=(100)
 
 # 固定の設定
-TRAIN_VISION_ENCODER=False
+TRAIN_VISION_ENCODER=True # 画像エンコーダを学習
 USE_VISION_LORA=False
 TRAIN_VISION_PROJECTOR=True
 DS_STAGE=zero3
 GRAD_ACCUM=2
-MODEL_MAX_LEN=1024
-SAVE_EPOCHS=50 # 保存間隔＝10エポック分のステップ数
+MODEL_MAX_LEN=32768
+SAVE_EPOCHS=10000 # 保存間隔＝10エポック分のステップ数
 
 # 1) 学習データ件数を Python でカウント
 TOTAL_EXAMPLES=$(python3 - <<EOF
@@ -61,14 +61,14 @@ EOF
 
       DATE=$(date '+%Y-%m-%dT%H_%M_%S')
       GLOBAL_BS=$((BS * NUM_GPUS * GRAD_ACCUM))
-      RUN_ID="gbs${GLOBAL_BS}_lr${LR}_ep${EP}_kansei$DATE"
+      RUN_ID="gbs${GLOBAL_BS}_lr${LR}_ep${EP}_len_32768_kansei$DATE"
 
       torchrun $DISTRIBUTED_ARGS train_add_head_alltoken.py \
         --model_id $MODEL_ID \
         --model_local_path $MODEL_LOCAL_PATH \
         --data_path $TRAIN_DATA_PATH \
         --image_folder $IMAGE_FOLDER \
-        --output_dir ./checkpoints/kansei/yesno/${RUN_ID} \
+        --output_dir ./checkpoints/kansei/len_32768/${RUN_ID} \
         --run_name $RUN_ID \
         --deepspeed ./ds_configs/${DS_STAGE}.json \
         --bf16 False \
